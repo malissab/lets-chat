@@ -8,8 +8,9 @@ class ChatroomsController < ApplicationController
 
   # GET /chatrooms/1 or /chatrooms/1.json
   def show
+    @chatrooms = Chatroom.all
+    render 'index'
   end
-
   # GET /chatrooms/new
   def new
     @chatroom = Chatroom.new
@@ -68,3 +69,5 @@ class ChatroomsController < ApplicationController
       params.require(:chatroom).permit(:name)
     end
 end
+
+  
