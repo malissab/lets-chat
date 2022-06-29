@@ -1,0 +1,39 @@
+.chat-room {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.chat-container {
+    display: inline-block;
+    .chat {
+        background-color: #e4dddd;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 30px;
+    }
+}
+
+.me {  
+
+        .chat {
+            background-color: #0dcaf0;
+            color: white;
+        }
+}
+
+
+
+
+.message-area {
+   position: absolute;
+    bottom: 0;
+    padding: 20px; 
+    width: 75%; 
+}
+
+
+.user {
+    font-size: 11px;
+    color: rgb(65, 64, 64);
+}
