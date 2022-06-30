@@ -6,7 +6,7 @@ class SendMessageJob < ApplicationJob
       partial: 'messages/message', 
       locals: { message: message }
     )
-    
+    puts "chatroom_channel_#{message.chatroom_id}"
     ActionCable.server.broadcast "chatroom_channel_#{message.chatroom_id}", html: html
-end
+  end
 end

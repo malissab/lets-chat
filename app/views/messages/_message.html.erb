@@ -1,0 +1,16 @@
+ <div class = "message mb-2 <%= 'me' if message.user == current_user%>">
+                <div class="chat-container">
+                  <div class = "chat">
+                    <%= message.chat %>
+                  </div>
+                  <div class="user">
+                    <%= message.user.username %>
+                    <br>
+                     <%= time = message.created_at
+                          time.strftime("%H:%M:%S")
+                      %>
+                  </div>
+                </div>
+              </div>
+
+             

@@ -12,8 +12,8 @@ consumer.subscriptions.create({ channel: "ChatroomChannel", chatroom_id: 1},
 
   received(data) {
     // Called when there's incoming data on the websocket for this channel
-    console.log(data)
-    const sentMessage = document.getElementById('messages')
-    sentMessage.innerHTML = sentMessage.innerHTML + data.html
+    console.log(data);
+    // const sentMessage = document.getElementById('messages')
+    // sentMessage.innerHTML = sentMessage.innerHTML + data.html
   }
 });
