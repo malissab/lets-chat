@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
     def self.randomize
     first_part = 'ChatMember'
-    second_part = ['A', 'B', 'C']
+    second_part = ['A', 'B', 'C', 'D']
     third_part = rand(1..20)
     username = "#{first_part}#{second_part.sample}#{third_part}"
     create(username: username)
